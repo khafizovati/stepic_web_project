@@ -6,7 +6,7 @@ sudo adduser www-data box
 sudo adduser nginx box
 sudo adduser root box
 sudo ln -s /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/
-sudo rm /etc/nginx/sites-enabled/default
+sudo unlink /etc/nginx/sites-enabled/default
 sudo rm /home/box/web/etc/error.log
 sudo /etc/init.d/nginx restart
 
